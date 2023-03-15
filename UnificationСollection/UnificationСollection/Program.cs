@@ -12,13 +12,13 @@ namespace UnificationСollection
 
             List<string> collection = new List<string>();
 
-            Unification(array1, collection);
-            Unification(array2, collection);
+            AddUniqueNumber(array1, collection);
+            AddUniqueNumber(array2, collection);
 
             Print(collection);
         }
 
-        private static void Unification(string[] array, List<string> collection)
+        private static void AddUniqueNumber(string[] array, List<string> collection)
         {
             for (int i = 0; i < array.Length; i++)
             {
